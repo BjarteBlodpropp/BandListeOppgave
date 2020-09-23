@@ -47,8 +47,7 @@ const BandCard = ({
                         { mestSpiltSang?.navn }
                     </div>
                     <div className={styles.playCount}>
-                        Avspillinger
-                        { mestSpiltSang?.avspillingerSpotify }
+                        { mestSpiltSang?.avspillingerSpotify } Avspillinger
                     </div>
                 </div>
             </div>
