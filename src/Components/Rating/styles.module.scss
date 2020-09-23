@@ -1,0 +1,15 @@
+.ratingContainer {
+  display: inline-flex;
+  float: right;
+
+  .ratingText {
+    padding-right: 5px;
+  }
+
+  .star {
+    &:hover, &:focus {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
+}

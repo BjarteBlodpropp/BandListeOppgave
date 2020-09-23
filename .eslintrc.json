@@ -1,0 +1,79 @@
+{
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "airbnb",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/react"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "react-hooks"
+    ],
+    "rules": {
+        "comma-dangle": [
+            "error",
+            {
+                "objects": "always-multiline",
+                "arrays": "always-multiline",
+                "imports": "always-multiline",
+                "functions": "ignore"
+            }
+        ],
+        "import/extensions": "off",
+        "@typescript-eslint/explicit-module-boundary-types": ["off", {
+            // Allow body-less arrow functions that return an `as const` type assertion will not
+            // require an explicit return value annotation.
+            "allowDirectConstAssertionInArrowFunctions": true,
+            // Allow Immediately returning another function expression will not
+            // require an explicit return value annotation
+            "allowHigherOrderFunctions": true
+        }],
+        "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
+        "object-curly-newline": ["error", {
+            "ObjectExpression": { "minProperties": 6, "multiline": true, "consistent": true },
+            "ObjectPattern": { "minProperties": 6, "multiline": true, "consistent": true }
+        }],
+        "indent": ["error", 4],
+        "react/jsx-indent": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "max-len": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "react/jsx-filename-extension": [
+          1,
+          {
+            "extensions": [".js", ".jsx", ".tsx", ".json"]
+          }
+        ],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "react/jsx-indent-props": ["error", 4],
+        "implicit-arrow-linebreak": "off",
+        "function-paren-newline": "off",
+        "react/jsx-props-no-spreading": "off"
+    },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      // use <root>/tsconfig.json
+      "typescript": {
+        "alwaysTryTypes": true // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+      }
+    }
+  }
+}

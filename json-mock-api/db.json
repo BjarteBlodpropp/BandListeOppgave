@@ -1,0 +1,76 @@
+{
+  "band": [
+    {
+      "id": 1,
+      "navn": "Queen",
+      "bildeUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Queen_%E2%80%93_montagem_%E2%80%93_new.png",
+      "bandMedlemmer": [
+        {
+          "navn": "Freddie Mercury"
+        },
+        {
+          "navn": "Brian May"
+        },
+        {
+          "navn": "John Deacon"
+        },
+        {
+          "navn": "Roger Taylor"
+        }
+      ],
+      "mestSpiltSang": {
+        "navn": "Bohemian Rhapsody",
+        "avspillingerSpotify": 1301566238
+      },
+      "rating": 1
+    },
+    {
+      "id": 2,
+      "navn": "The Beatles",
+      "bildeUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/The_Fabs.JPG",
+      "bandMedlemmer": [
+        {
+          "navn": "John Lennon"
+        },
+        {
+          "navn": "Paul McCartney"
+        },
+        {
+          "navn": "George Harrison"
+        },
+        {
+          "navn": "Ringo Starr"
+        }
+      ],
+      "mestSpiltSang": {
+        "navn": "Here Comes The Sun",
+        "avspillingerSpotify": 525136032
+      },
+      "rating": 1
+    },
+    {
+      "id": 3,
+      "navn": "Metallica",
+      "bildeUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Metallica_Live_at_The_O2%2C_London%2C_England%2C_22_October_2017.jpg/1280px-Metallica_Live_at_The_O2%2C_London%2C_England%2C_22_October_2017.jpg",
+      "bandMedlemmer": [
+        {
+          "navn": "James Hetfield"
+        },
+        {
+          "navn": "Lars Ulrich"
+        },
+        {
+          "navn": "Kirk Hammett"
+        },
+        {
+          "navn": "Robert Trujilo"
+        }
+      ],
+      "mestSpiltSang": {
+        "navn": "Enter Sandman",
+        "avspillingerSpotify": 552414098
+      },
+      "rating": 1
+    }
+  ]
+}
